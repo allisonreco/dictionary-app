@@ -1,6 +1,7 @@
 import React from "react";
 import "./Results.css";
 import Meaning from "./Meaning";
+import Phonetic from "./Phonetic";
 
 export default function Results(props) {
   console.log(props.results);
@@ -9,9 +10,23 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h2> {props.results.word} </h2>
+        
+        
         <h3>
           [ je-stik-yuh-leyt ] <span>🔊</span>
         </h3>
+
+        console.log(results)
+
+
+        {props.results.phonetics.map(function (phonetic, index) {
+          return (
+            <div key={index}>
+              <Phonetic phonetic={phonetic} />
+            </div>
+          );
+        })}
+
         <h4>Meaning</h4>
         {props.results.meanings.map(function (meaning, index) {
           return (
@@ -20,17 +35,6 @@ export default function Results(props) {
             </div>
           );
         })}
-
-        <p>“make or use gestures,” especially in an excited manner</p>
-
-        <h4>synonyms</h4>
-        <p>gesture, motion, wave, signal.</p>
-
-        <h4>Phrase</h4>
-        <p>
-          At first he kept his hands behind his back in a tight knot; then he
-          began to gesticulate as he turned.
-        </p>
       </div>
     );
   } else {
