@@ -1,3 +1,5 @@
-.Header > div {
+.Header {
   display: flex;
+  justify-content: left;
+  width: fit-content;
 }

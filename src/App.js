@@ -1,6 +1,8 @@
 import "./App.css";
 import Header from "./Header";
 import Search from "./Search";
+import Results from "./Results";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
 
       <div className="Container">
         <Search />
+        <Results/>
       </div>
+      <Footer/>
     </div>
   );
 }
