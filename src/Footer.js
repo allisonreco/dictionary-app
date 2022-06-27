@@ -2,7 +2,11 @@ import React from "react";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithubSquare, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithubSquare,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -18,7 +22,11 @@ export default function Footer() {
         </a>
       </span>
       <span>
-        <a href="mailto:allisonreyes.dev@gmail.com" target="_blank">
+        <a
+          href="mailto:allisonreyes.dev@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
 
