@@ -10,24 +10,13 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h2> {props.results.word} </h2>
-        
-        
-        <h3>
-          [ je-stik-yuh-leyt ] <span>🔊</span>
-        </h3>
 
-        console.log(results)
+        <Phonetic phonetic={props.results.phonetics[0]} />
 
+        <h4>
+          <strong> Definition of {props.results.word} </strong>
+        </h4>
 
-        {props.results.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <Phonetic phonetic={phonetic} />
-            </div>
-          );
-        })}
-
-        <h4>Meaning</h4>
         {props.results.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
