@@ -1,6 +1,9 @@
-*{
-   background: #E7DFD8;
-
+body {
+  background-image: radial-gradient(#212121 20%, transparent 20%),
+    radial-gradient(#000000 20%, transparent 20%);
+  background-color: #ffffff;
+  background-position: 0 0, 50px 50px;
+  background-size: 10px 10px;
 }
 
 .App {
@@ -9,10 +12,14 @@
   align-items: left;
   margin: 0 auto;
   max-width: 800px;
-  font-family: 'EB Garamond', serif;
-
 }
 
 .App .Container {
   border: 1px solid black;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 10px 10px #f9f9f9, 09px 11px #25201c, 11px 09px #25201c,
+    11px 11px #25201c, 20px 20px #f9f9f9, 21px 19px #25201c, 19px 21px #25201c,
+    21px 21px #25201c, 21px 21px #25201c, 30px 30px #25201c;
+  margin: 20px;
 }

@@ -2,4 +2,6 @@
   display: flex;
   justify-content: left;
   width: fit-content;
+    font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
 }

@@ -1,0 +1,21 @@
+.Photos h4 {
+  font-family: "Oswald", sans-serif;
+  margin-left: 30px;
+}
+
+.Photos > div {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  padding: 30px;
+
+}
+
+.Photos img {
+filter:  contrast(108%) grayscale(108%);
+transition:200ms ease-in-out;
+}
+
+.Photos img:hover {
+filter: none;
+}
