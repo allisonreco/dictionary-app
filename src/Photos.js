@@ -9,13 +9,8 @@ export default function Photos(props) {
         <div>
           {props.photos.map(function (photo, index) {
             return (
-              <div>
-                <a
-                  href={photo.src.original}
-                  target="_blank"
-                  rel="noreferrer"
-                  key={index}
-                >
+              <div key={index}>
+                <a href={photo.src.original} target="_blank" rel="noreferrer">
                   <img
                     src={photo.src.portrait}
                     title={photo.alt}
