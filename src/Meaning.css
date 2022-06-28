@@ -1,4 +1,21 @@
-.Meaning .Example{
-    color:red;
-    font-family: 'Ovo', serif;
+.Meaning {
+  font-family: "Ovo", serif;
+}
+
+.Meaning button {
+  font-family: "Ovo", serif;
+  color: gray;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.Meaning button:hover {
+  color: black;
+}
+
+.Meaning .ShowMore {
+  margin: 0 auto;
+  text-align: right;
 }

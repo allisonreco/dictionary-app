@@ -3,6 +3,9 @@ import axios from "axios";
 import "./Search.css";
 import Results from "./Results";
 import Photos from "./Photos";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Header from "./Header";
 
 export default function Search() {
   let [keyword, setKeyword] = useState("");
@@ -35,13 +38,22 @@ export default function Search() {
 
   return (
     <div className="Search">
-      <form onSubmit={Search}>
-        <input
-          type="search"
-          onChange={handleKeywordChange}
-          placeholder="Type a word..."
-        ></input>
-      </form>
+      <div className="SearchHeader">
+        <Header />
+        <div>
+          <form onSubmit={Search}>
+            <input
+              type="search"
+              onChange={handleKeywordChange}
+              placeholder="Type a word..."
+            />
+
+            <button onClick={Search}>
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
+          </form>
+        </div>
+      </div>
 
       <div className="SearchResults">
         <Results results={results} />

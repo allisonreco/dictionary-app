@@ -1,14 +1,13 @@
-.Phonetic p a{
-    font-family: 'Ovo', serif;
-    color: #25201C;
-
+.Phonetic p a {
+  font-family: "Ovo", serif;
+  color: #25201c;
 }
 
-.Phonetic a:hover{
-    color:grey;
+.Phonetic a:hover {
+  color: grey;
 }
 
-.Phonetic p{
-font-size: 30px;
-margin:0px;
+.Phonetic p {
+  font-size: 30px;
+  margin: 0px;
 }

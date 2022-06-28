@@ -5,17 +5,16 @@
 
 .Photos > div {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-between;
   padding: 30px;
-
 }
 
 .Photos img {
-filter:  contrast(108%) grayscale(108%);
-transition:200ms ease-in-out;
+  filter: contrast(108%) grayscale(108%);
+  transition: 200ms ease-in-out;
 }
 
 .Photos img:hover {
-filter: none;
+  filter: none;
 }

@@ -1,26 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Meaning.css";
 import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
+  const numberOfDefinitions = props.meaning.definitions.length;
+  const limit = 3;
+
+  const [showMore, setShowMore] = useState(false);
+
+  let filteredDefinitions = props.meaning.definitions;
+  if (!showMore) {
+    filteredDefinitions = props.meaning.definitions.slice(0, limit);
+  }
+
+  function renderShowMore() {
+    return (
+      <div className="ShowMore">
+        {!showMore ? (
+          <button onClick={() => setShowMore(true)}>show more ▾</button>
+        ) : (
+          <button onClick={() => setShowMore(false)}>show less ▴</button>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className="Meaning">
-      
       <h4>{props.meaning.partOfSpeech} </h4>
-      {props.meaning.definitions.map(function (definition, index) {
+
+      {filteredDefinitions.map(function (definition, index) {
         return (
           <div key={index}>
             <ul>
-              <li> {definition.definition}</li>
-              <em> {definition.example}</em>
+              <li>{definition.definition}</li>
+              <em>{definition.example}</em>
             </ul>
           </div>
         );
       })}
 
-      
-        <Synonyms synonyms={props.meaning.synonyms} />
-      
+      {numberOfDefinitions > limit ? renderShowMore() : null}
+      <Synonyms synonyms={props.meaning.synonyms} />
     </div>
   );
 }
