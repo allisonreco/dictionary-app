@@ -4,7 +4,7 @@ import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 
 export default function Results(props) {
-  if (props.results) {
+  if (props.results && Object.keys(props.results).length > 0) {
     return (
       <div className="Results">
         <h2 className="Word"> {props.results.word} </h2>
@@ -25,7 +25,9 @@ export default function Results(props) {
         })}
       </div>
     );
-  } else {
+  } else if (props.results && Object.keys(props.results).length === 0) {
     return <div className="Results">Could not find any results</div>;
+  } else {
+    return null;
   }
 }

@@ -21,7 +21,7 @@ export default function Search() {
   }
 
   function handleDictionaryError(error) {
-    setResults(null);
+    setResults({});
   }
 
   function handlePexelsError(error) {
