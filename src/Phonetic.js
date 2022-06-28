@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 
 export default function Phonetic(props) {
-    console.log(props)
   return (
     <div className="Phonetic">
       <p>

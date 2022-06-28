@@ -26,6 +26,6 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return null;
+    return <div className="Results">Could not find any results</div>;
   }
 }

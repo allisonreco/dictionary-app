@@ -1,14 +1,8 @@
 .Results {
-    margin:30px;
+  margin: 30px;
 }
 
-.Results h2 ,h4 {
-      font-family: 'Oswald', sans-serif;
-      text-transform: uppercase;
+.Results h2 {
+  font-size: 40px;
+  margin: 0%;
 }
-
-.Results h2{
-    font-size: 40px;
-    margin: 0%;
-}
-

@@ -2,12 +2,13 @@
   display: flex;
   justify-content: left;
   width: fit-content;
-  font-family: 'Oswald', sans-serif;
-text-transform: uppercase;
-align-items: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  align-items: center;
 }
 
-.Header img{
-  margin-top: 15px;
- 
+.Header img {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 3px;
 }
