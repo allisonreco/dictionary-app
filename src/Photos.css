@@ -19,3 +19,10 @@
 .Photos img:hover {
   filter: none;
 }
+
+
+@media (max-width: 767px) {
+  .Photos > div {
+    justify-content: center;
+  }
+}

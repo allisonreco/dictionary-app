@@ -14,6 +14,7 @@ h5 {
   font-family: "Oswald", sans-serif;
 }
 
+h2,
 h4 {
   text-transform: uppercase;
 }
@@ -35,4 +36,13 @@ h4 {
     11px 11px #25201c, 20px 20px #f9f9f9, 21px 19px #25201c, 19px 21px #25201c,
     21px 21px #25201c, 21px 21px #25201c, 30px 30px #25201c;
   margin: 20px;
+}
+
+@media (max-width: 767px) {
+  .App .Container {
+    box-shadow: unset;
+    padding:3px;
+    margin:10px;
+    margin-top:15px;
+  }
 }

@@ -7,7 +7,7 @@ export default function Results(props) {
   if (props.results?.word) {
     return (
       <div className="Results">
-        <h2 className="Word"> {props.results.word} </h2>
+        <h2 className="Word">{props.results.word}</h2>
 
         <Phonetic phonetic={props.results.phonetics[0]} />
 

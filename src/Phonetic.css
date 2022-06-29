@@ -1,12 +1,17 @@
-.Phonetic p a {
-  color: #25201c;
-}
-
-.Phonetic a:hover {
-  color: grey;
-}
-
-.Phonetic p {
+.Phonetic {
   font-size: 30px;
   margin: 0px;
+}
+
+.Phonetic button {
+  margin-left: 10px;
+  color: #25201c;
+  font-size: 26px;
+  border: none;
+  background-color: transparent;
+  cursor:pointer;
+}
+
+.Phonetic button:hover {
+  color: grey;
 }
