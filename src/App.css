@@ -26,6 +26,9 @@ h4 {
   margin: 0 auto;
   max-width: 800px;
   font-family: "Ovo", serif;
+  margin-bottom: 60px;
+  margin-top:40px;
+
 }
 
 .App .Container {
@@ -35,7 +38,7 @@ h4 {
   box-shadow: 10px 10px #f9f9f9, 09px 11px #25201c, 11px 09px #25201c,
     11px 11px #25201c, 20px 20px #f9f9f9, 21px 19px #25201c, 19px 21px #25201c,
     21px 21px #25201c, 21px 21px #25201c, 30px 30px #25201c;
-  margin: 20px;
+  
 }
 
 @media (max-width: 767px) {
@@ -43,6 +46,9 @@ h4 {
     box-shadow: unset;
     padding:3px;
     margin:10px;
-    margin-top:15px;
+  }
+  .App{
+    margin-top: 0;
+    margin-bottom: 5px;
   }
 }
